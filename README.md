@@ -3,7 +3,7 @@
 - [Python Nedir?](#python-nedir)
 - [Virtual Environment Nedir?](#virtual-environment-nedir)
 - [Package Management Nedir?](#package-management-nedir)
-- [Python Veri Tipleri ve Veri Yapıları](#python-veri-tipleri-ve-veri-yapilari)
+- [Python Veri Tipleri ve Veri Yapilari](#python-veri-tipleri-ve-veri-yapilari)
 
 
 ## Python Nedir?
@@ -78,7 +78,7 @@ Paket yöneticileri, genellikle depolardan (repository) paketleri arar, indirir,
 
 Paket yönetimi, yazılım geliştirme sürecinde önemli bir rol oynar ve projelerde kullanılan paketlerin etkin bir şekilde yönetilmesini sağlar.
 
-## Python Veri Tipleri ve Veri Yapıları
+## Python Veri Tipleri ve Veri Yapilari
 
 ### Sayılar (Numbers)
 
