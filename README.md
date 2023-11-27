@@ -3,9 +3,9 @@
 - [Python Nedir?](#python-nedir)
 - [Virtual Environment Nedir?](#virtual-environment-nedir)
 - [Package Management Nedir?](#package-management-nedir)
-- [Python Veri Tipleri ve Veri Yapilari](#python-veri-tipleri-ve-veri-yapilari) 
-- [Python Fonksiyon Nedir?](#python-fonksiyon-nedir) (python functions)
-- [Python Kosullar Nedir?](#python-kosullar-nedir) (python conditions)
+- [Python Data Structures](#python-data-structures) 
+- [Python Function Nedir?](#python-Function-nedir) 
+- [Python Conditions Nedir?](#python-Conditions-nedir) 
  
 
 
@@ -81,7 +81,7 @@ Paket yöneticileri, genellikle depolardan (repository) paketleri arar, indirir,
 
 Paket yönetimi, yazılım geliştirme sürecinde önemli bir rol oynar ve projelerde kullanılan paketlerin etkin bir şekilde yönetilmesini sağlar.
 
-## Python Veri Tipleri ve Veri Yapilari
+## Python Data Structures
 
 ### Sayılar (Numbers)
 
@@ -114,22 +114,22 @@ Paket yönetimi, yazılım geliştirme sürecinde önemli bir rol oynar ve proje
 - **Küme:** Benzersiz öğelerin bir koleksiyonunu temsil eder. Örneğin: `{1, 2, 3, 4}`.
 
 
-## Python Fonksiyon Nedir?
+## Python Function Nedir?
 Python'da bir fonksiyon, belirli bir görevi yerine getiren ve kodunuzu tekrar kullanılabilir hale getiren bir bloktur. Genellikle belirli bir adı vardır ve parametreler alabilir, bir işlem gerçekleştirir ve isteğe bağlı olarak bir değer döndürebilir.
 
-### Fonksiyon Ne Zaman Yazılır?
+### Function Ne Zaman Yazılır?
 - Belirli bir işlemi tekrar tekrar gerçekleştirmeniz gerektiğinde.
 - Kodunuzu parçalara ayırmak ve daha okunabilir hale getirmek istediğinizde.
 - Aynı işlemi farklı verilerle uygulamanız gerektiğinde.
 
-### Fonksiyon Nasıl Yazılır?
+### Function Nasıl Yazılır?
 
 ```python
 def greet(name):
     return f"Merhaba, {name}!"
 ```
 
-### Fonksiyon Parametreleri Nedir?
+### Function Parametreleri Nedir?
 Parametreler: Fonksiyonların aldığı değerlerdir. Yukarıdaki örnekte name, fonksiyonun aldığı tek bir parametredir. Fonksiyonlar birden fazla parametre alabilir.
 
 ### Return Nedir?
@@ -146,8 +146,8 @@ def greet(name):
 
 ```
 
-## Python Kosullar
-### Koşul Nedir?
+## Python Conditions Nedir?
+### Condition Nedir?
 Python'da koşullar, programın belirli bir duruma göre farklı işlemler yapmasını sağlar. if, elif, else gibi ifadelerle belirli koşulları kontrol edebiliriz.
 ```python
 # 1. Koşul: if
