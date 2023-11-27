@@ -3,6 +3,7 @@
 - [Python Nedir?](#python-nedir)
 - [Virtual Environment Nedir?](#virtual-environment-nedir)
 - [Package Management Nedir?](#package-management-nedir)
+- [Python Veri Tipleri ve Veri Yapıları](#python veri-tipleri-ve-veri-yapilari)
 
 
 ## Python Nedir?
@@ -76,6 +77,38 @@ Pek çok programlama dilinin kendi paket yöneticileri bulunur:
 Paket yöneticileri, genellikle depolardan (repository) paketleri arar, indirir, yükler, günceller ve kaldırır. Bu şekilde, geliştirme sürecinde ihtiyaç duyulan paketleri kolayca elde edebilirsiniz.
 
 Paket yönetimi, yazılım geliştirme sürecinde önemli bir rol oynar ve projelerde kullanılan paketlerin etkin bir şekilde yönetilmesini sağlar.
+
+## Python Veri Tipleri ve Veri Yapıları
+
+### Sayılar (Numbers)
+
+- **int:** Tam sayıları temsil eder. Örneğin: `5`, `-10`.
+- **float:** Ondalık sayıları temsil eder. Örneğin: `3.14`, `2.71828`.
+- **complex:** Karmaşık sayıları temsil eder. Örneğin: `3+4j` (gerçek ve sanal kısım).
+
+### Karakter Dizileri (Strings)
+
+- **str:** Metin veya karakter dizilerini temsil eder. Örneğin: `'Merhaba'`, `"Python"`.
+
+### Boolean (TRUE-FALSE)
+
+- **bool:** Mantıksal değerleri temsil eder. `True` veya `False` olarak ifade edilir.
+
+### Liste (List)
+
+- **Liste:** Sıralı ve değiştirilebilir öğelerin bir koleksiyonunu temsil eder. Örneğin: `[1, 2, 3, 'a', 'b']`.
+
+### Sözlük (Dictionary)
+
+- **Sözlük:** Anahtar-değer çiftlerinin koleksiyonunu temsil eder. Örneğin: `{'anahtar1': 'değer1', 'anahtar2': 'değer2'}`.
+
+### Demet (Tuple)
+
+- **Demet:** Değiştirilemeyen öğelerin bir koleksiyonunu temsil eder. Örneğin: `(1, 2, 'a', 'b')`.
+
+### Set
+
+- **Küme:** Benzersiz öğelerin bir koleksiyonunu temsil eder. Örneğin: `{1, 2, 3, 4}`.
 
 
 
