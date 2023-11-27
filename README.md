@@ -3,9 +3,10 @@
 - [Python Nedir?](#python-nedir)
 - [Virtual Environment Nedir?](#virtual-environment-nedir)
 - [Package Management Nedir?](#package-management-nedir)
-- [Python Veri Tipleri ve Veri Yapilari](#python-veri-tipleri-ve-veri-yapilari) (functions)
-- [Python Fonksiyon Nedir?](#python-fonksiyon-nedir)
-- 
+- [Python Veri Tipleri ve Veri Yapilari](#python-veri-tipleri-ve-veri-yapilari) 
+- [Python Fonksiyon Nedir?](#python-fonksiyon-nedir) (python functions)
+- [Python Kosullar Nedir?](#python-kosullar-nedir) (python conditions)
+ 
 
 
 ## Python Nedir?
@@ -145,6 +146,32 @@ def greet(name):
 
 ```
 
+## Python Kosullar
+### Koşul Nedir?
+Python'da koşullar, programın belirli bir duruma göre farklı işlemler yapmasını sağlar. if, elif, else gibi ifadelerle belirli koşulları kontrol edebiliriz.
+```python
+# 1. Koşul: if
+x = 10
+if x > 5:
+    print("x, 5'ten büyük")
+
+# 2. Koşul: if-else
+y = 3
+if y > 5:
+    print("y, 5'ten büyük")
+else:
+    print("y, 5'ten küçük veya eşit")
+
+# 3. Koşul: if-elif-else
+z = 7
+if z > 10:
+    print("z, 10'dan büyük")
+elif z == 10:
+    print("z, 10'a eşit ")
+else:
+    print("z, 10'dam küçük ")
+
+```
 
 
 
