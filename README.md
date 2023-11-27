@@ -3,7 +3,9 @@
 - [Python Nedir?](#python-nedir)
 - [Virtual Environment Nedir?](#virtual-environment-nedir)
 - [Package Management Nedir?](#package-management-nedir)
-- [Python Veri Tipleri ve Veri Yapilari](#python-veri-tipleri-ve-veri-yapilari)
+- [Python Veri Tipleri ve Veri Yapilari](#python-veri-tipleri-ve-veri-yapilari) (functions)
+- [Python Fonksiyon Nedir?](#python-fonksiyon-nedir)
+- 
 
 
 ## Python Nedir?
@@ -109,6 +111,39 @@ Paket yönetimi, yazılım geliştirme sürecinde önemli bir rol oynar ve proje
 ### Set
 
 - **Küme:** Benzersiz öğelerin bir koleksiyonunu temsil eder. Örneğin: `{1, 2, 3, 4}`.
+
+
+## Python Fonksiyon Nedir?
+Python'da bir fonksiyon, belirli bir görevi yerine getiren ve kodunuzu tekrar kullanılabilir hale getiren bir bloktur. Genellikle belirli bir adı vardır ve parametreler alabilir, bir işlem gerçekleştirir ve isteğe bağlı olarak bir değer döndürebilir.
+
+### Fonksiyon Ne Zaman Yazılır?
+- Belirli bir işlemi tekrar tekrar gerçekleştirmeniz gerektiğinde.
+- Kodunuzu parçalara ayırmak ve daha okunabilir hale getirmek istediğinizde.
+- Aynı işlemi farklı verilerle uygulamanız gerektiğinde.
+
+### Fonksiyon Nasıl Yazılır?
+
+```python
+def greet(name):
+    return f"Merhaba, {name}!"
+```
+
+### Fonksiyon Parametreleri Nedir?
+Parametreler: Fonksiyonların aldığı değerlerdir. Yukarıdaki örnekte name, fonksiyonun aldığı tek bir parametredir. Fonksiyonlar birden fazla parametre alabilir.
+
+### Return Nedir?
+Return: Fonksiyonun işlemi sonucunda döndürdüğü değerdir. Örneğin, yukarıdaki fonksiyon "Merhaba, {name}!" dizesini döndürür.
+
+### Docstring Nedir?
+Docstring: Python'da fonksiyonların veya modüllerin başında yer alan açıklamalardır. Genellikle fonksiyonun ne yaptığını, parametreleri ve dönüş değerini anlatır. Bu açıklamalar kodun daha okunabilir olmasını sağlar.
+
+Örnek Docstring:
+```python
+def greet(name):
+    """Belirtilen isme göre selam döndürür."""
+    return f"Merhaba, {name}!"
+
+```
 
 
 
