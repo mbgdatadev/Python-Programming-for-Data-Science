@@ -7,7 +7,7 @@ Burada iki işlem yapılacaktır biri `Anaconda` üzerinden diğeri  `Gelişmiş
 2. Açılan ekrana `conda env list` yaz ve `Enter`  bas
 3. `conda activate` yaz ve  `Enter` bas
 4. Pycharm aç ve `File > Settings > Tools> Terminal ` ekranını aç
-5. Açılan ekranda `Shell path:` kısmına `C:\Windows\system32\cmd.exe ` yaz   ve `Ok` butonuna bas
+5. Açılan ekranda `Shell path:` kısmına `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` yaz   ve `Ok` butonuna bas
 
 Bu adımları izledin hala terminal ekranında kodlar çalışmıyorsa Gelişmiş Sistem Ayarları adımları izle
 
