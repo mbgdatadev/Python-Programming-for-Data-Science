@@ -3,7 +3,7 @@
 - [Python Nedir?](#python-nedir)
 - [Virtual Environment Nedir?](#virtual-environment-nedir)
 - [Package Management Nedir?](#package-management-nedir)
-- [Python Veri Tipleri ve Veri Yapıları](#python veri-tipleri-ve-veri-yapilari)
+- [Python Veri Tipleri ve Veri Yapıları](#python-veri-tipleri-ve-veri-yapilari)
 
 
 ## Python Nedir?
