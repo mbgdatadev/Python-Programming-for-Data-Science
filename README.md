@@ -4,8 +4,10 @@
 - [Virtual Environment Nedir?](#virtual-environment-nedir)
 - [Package Management Nedir?](#package-management-nedir)
 - [Python Data Structures](#python-data-structures) 
-- [Python Function Nedir?](#python-Function-nedir) 
-- [Python Conditions Nedir?](#python-Conditions-nedir) 
+- [Python Function Nedir?](#python-function-nedir) 
+- [Python Conditions Nedir?](#python-conditions-nedir)
+- [Python Loops Nedir?](#python-loops-nedir) 
+- 
  
 
 
@@ -172,6 +174,35 @@ else:
     print("z, 10'dam küçük ")
 
 ```
+
+
+## Python Loops Nedir?
+
+Python'da döngüler, belirli bir bloğun belirli bir koşul sağlandığı sürece tekrarlanmasını sağlar. Bu, program içinde belirli işlemlerin yinelemeli olarak gerçekleştirilmesini sağlar.
+
+### For Loop
+```python
+numbers = [1, 2, 3, 4, 5]
+for num in numbers:
+    print(num)
+
+```
+
+Yukarıdaki örnek, `numbers` adlı bir liste oluşturur. `for` döngüsü bu liste üzerinde her eleman için `num` adlı geçici bir değişken oluşturur ve listenin her elemanını bu değişkene atar. Daha sonra her eleman için belirtilen işlemi gerçekleştirir, burada `print(num)` komutu ile her bir sayıyı ekrana yazdırır.
+
+### While Loop
+`while` döngüsü, belirli bir koşul sağlandığı sürece belirtilen işlemi tekrarlar. Koşul doğru olduğu sürece döngü çalışmaya devam eder. Koşul yanlış olduğunda döngü sona erer.
+
+```python
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+```
+Yukarıdaki örnekte `count` adlı bir değişken tanımlanır ve `while` döngüsü bu değişkenin değeri 5'ten küçük olduğu sürece çalışır. Her döngü adımında `count` değeri bir artırılarak ekrana yazdırılır. `count` değeri 5 olduğunda koşul sağlanmaz ve döngü sona erer.
+
+
+
 
 
 
