@@ -1,7 +1,7 @@
 # Python-Programming-for-Data-Science
 ## İçindekiler
-- [Python Nedir](#python-nedir)
-- [Virtual Environment Nedir](#virtual-environment-nedir)
+- [Python Nedir?](#python-nedir)
+- [Virtual Environment Nedir?](#virtual-environment-nedir)
 
 
 ## Python Nedir?
@@ -22,17 +22,16 @@ Python, kullanımı kolay ve güçlü bir programlama dilidir. Genellikle okunab
 print("Merhaba, Dünya!")
 ```
 
-## Virtual Environment Nedir ?
-
+## Virtual Environment Nedir?
 Sanal ortam (Virtual Environment), bir Python projesinin bağımlılıklarını izole etmek ve yönetmek için kullanılan bir araçtır. Projenizin farklı versiyonları için farklı kütüphane versiyonları veya modüller gerekebilir. Sanal ortamlar, bu durumda projenizi belirli bir Python sürümü ve kütüphane seti ile sınırlamanıza yardımcı olur.
 
-### Neden Sanal Ortam Kullanılır?
+### Neden Sanal Ortam Kullanılır ?
 
 - **Bağımlılıkları İzole Eder:** Her proje kendi sanal ortamını oluşturabilir ve bağımlılıkları izole edebilir. Bu, farklı projelerde farklı kütüphane versiyonlarını kullanmanızı sağlar.
 - **Temiz ve Kontrollü Çalışma Alanı:** Sanal ortamlar, proje bağımlılıklarının kurulumunu, güncellemesini ve kaldırılmasını izole bir şekilde yapmanızı sağlar.
 - **Taşınabilirlik:** Sanal ortam, projeyle birlikte taşınabilir olduğundan farklı sistemlerde aynı bağımlılıkları kullanabilirsiniz.
 
-### Sanal Ortam Nasıl Oluşturulur?
+### Sanal Ortam Nasıl Oluşturulur ?
 
 Sanal ortam oluşturmak için terminale şu komutu kullanabilirsiniz:
 
