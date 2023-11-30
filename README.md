@@ -7,7 +7,7 @@
 - [Python Function Nedir?](#python-function-nedir) 
 - [Python Conditions Nedir?](#python-conditions-nedir)
 - [Python Loops Nedir?](#python-loops-nedir) 
-- [Python enumerate Fonksiyonu](#python-enumerate-fonksiyonu)
+- [Python Comprehension Nedir?](#python-comprehension-nedir)
  
 
 
@@ -201,7 +201,7 @@ while count < 5:
 ```
 Yukarıdaki örnekte `count` adlı bir değişken tanımlanır ve `while` döngüsü bu değişkenin değeri 5'ten küçük olduğu sürece çalışır. Her döngü adımında `count` değeri bir artırılarak ekrana yazdırılır. `count` değeri 5 olduğunda koşul sağlanmaz ve döngü sona erer.
 
-## Python enumerate Fonksiyonu
+### Python `enumerate` Fonksiyonu
 
 `enumerate`, bir dizi veya başka bir yinelenebilir nesne üzerinde döngü oluştururken hem elemanların değerlerine hem de indislerine erişmemizi sağlayan bir Python işlevidir.
 
@@ -211,12 +211,133 @@ Yukarıdaki örnekte `count` adlı bir değişken tanımlanır ve `while` döng�
 liste = ['a', 'b', 'c', 'd']
 
 for index, value in enumerate(liste):
-    print(f"Index: {index}, Value: {value}")```
+    print(f"Index: {index}, Value: {value}")
+```
+
+### Python'da `continue` ve `break`
+
+- **`continue`**: Bir döngü içinde kullanıldığında, döngü herhangi bir sebepten dolayı beklenmedik bir şekilde sonlanmadığı sürece, döngünün o anda bulunduğu adımı atlar ve döngüyü devam ettirir. Yani, `continue` ifadesi çalıştığında döngü bloğundaki geri kalan kısmı görmezden gelir ve bir sonraki döngü adımına geçer.
+
+Örnek:
+
+```python
+for i in range(5):
+    if i == 2:
+        continue
+    print(i)
+
+output:
+0
+1
+3
+4
+
+```
+
+- **`break`**  Bir döngü içinde kullanıldığında, belirli bir koşul gerçekleştiğinde döngüyü tamamen sonlandırır. Yani, `break` ifadesi çalıştığında döngü derhal sona erer ve döngü bloğunun dışındaki kod satırlarına geçilir.
+
+```python
+for i in range(5):
+    if i == 3:
+        break
+    print(i)
 
 
+output:
+0
+1
+2
+
+```
+### Python'da Kullanılan Bazı Fonksiyonlar ve İfadeler
+
+#### `zip()`
+- `zip()`, birden fazla iterable'ı (liste, tuple vb.) eşleştirerek birleştiren ve her bir iterable'dan sırayla elemanları alarak tuple'lar oluşturan bir Python işlevidir.
+- Örneğin:
+
+```python
+liste1 = [1, 2, 3]
+liste2 = ['a', 'b', 'c']
+
+for eleman in zip(liste1, liste2):
+    print(eleman)
+
+outpu:
+(1, 'a')
+(2, 'b')
+(3, 'c')
+```
+
+`lambda`, anonim (isimsiz) bir fonksiyon oluşturmak için kullanılan bir ifadedir. Genellikle tek satırda basit fonksiyonlar tanımlamak için kullanılır.
+
+```python
+carpma = lambda x, y: x * y
+print(carpma(5, 3))  # Bu kod 15 çıktısını verecektir.
+
+```
+
+`map()`, bir fonksiyonu belirli bir iterable'ın her elemanına uygulayarak yeni bir iterable döndüren bir Python işlevidir.
+
+```python
+liste = [1, 2, 3, 4]
+kareler = map(lambda x: x ** 2, liste)
+print(list(kareler))  # Bu kod [1, 4, 9, 16] çıktısını verecektir.
+
+```
+
+`filter()`, bir fonksiyonu belirli bir iterable'ın her elemanına uygulayarak, fonksiyonun doğruladığı elemanlardan oluşan bir iterable döndüren bir Python işlevidir
+
+```python
+liste = [1, 2, 3, 4, 5, 6]
+cift_sayilar = filter(lambda x: x % 2 == 0, liste)
+print(list(cift_sayilar))  # Bu kod [2, 4, 6] çıktısını verecektir.
+```
+
+`reduce()`, bir fonksiyonu belirli bir iterable'ın elemanlarına sırayla uygulayarak tek bir sonuç üreten bir Python işlevidir. Python 3'ten itibaren functools modülünde bulunur.
+
+```python
+from functools import reduce
+
+liste = [1, 2, 3, 4]
+toplam = reduce(lambda x, y: x + y, liste)
+print(toplam)  # Bu kod 10 çıktısını verecektir.
+```
 
 
+## Python Comprehension Nedir?
+Python programlama dilinde daha kısa, daha okunaklı ve daha hızlı kod yazmayı sağlayan bir yapıdır. List Comprehension, Dictionary Comprehension, Set Comprehension ve Generator Comprehension gibi çeşitleri bulunur.
 
+### List Comprehension (Liste Oluşturma): 
+Bir liste üzerinde döngü oluşturarak yeni bir liste oluşturma yöntemidir. Özellikle mevcut bir liste veya başka bir iterable'dan yeni bir liste oluşturmak için kullanılır.
 
+```python
+liste = [1, 2, 3, 4, 5]
+kareler = [x ** 2 for x in liste]
+# kareler şimdi [1, 4, 9, 16, 25] değerlerine sahip bir liste olmuştur
+```
 
+### Dictionary Comprehension (Sözlük Oluşturma): 
+Bir sözlük üzerinde döngü oluşturarak yeni bir sözlük oluşturma yöntemidir. Sözlükteki her bir anahtar ve değer için belirli bir koşula göre yeni bir sözlük oluşturmak için kullanılır.
+
+```python
+sozluk = {'a': 1, 'b': 2, 'c': 3}
+yeni_sozluk = {anahtar: deger * 2 for anahtar, deger in sozluk.items()}
+# yeni_sozluk şimdi {'a': 2, 'b': 4, 'c': 6} değerlerine sahip bir sözlük olmuştur
+
+```
+### Set Comprehension (Küme Oluşturma): 
+Bir küme üzerinde döngü oluşturarak yeni bir küme oluşturma yöntemidir. Benzer şekilde mevcut bir küme veya başka bir iterable'dan yeni bir küme oluşturmak için kullanılır.
+
+```python
+kume = {1, 2, 3, 4, 5}
+tekler = {x for x in kume if x % 2 != 0}
+# tekler şimdi {1, 3, 5} değerlerine sahip bir küme olmuştur
+```
+### Generator Comprehension (Generator Oluşturma): 
+Bir generator (üreteç) oluşturmak için kullanılan yapıdır. Liste veya sözlük gibi veri yapısını tam olarak bellekte oluşturmadan, ihtiyaç duyulduğunda elemanları üreten bir yapıdır.
+
+```python
+generator = (x ** 2 for x in range(5))
+# Bu, bir generator nesnesi oluşturur ve elemanları gerektiğinde üretir
+```
 
