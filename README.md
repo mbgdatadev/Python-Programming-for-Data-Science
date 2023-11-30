@@ -7,7 +7,7 @@
 - [Python Function Nedir?](#python-function-nedir) 
 - [Python Conditions Nedir?](#python-conditions-nedir)
 - [Python Loops Nedir?](#python-loops-nedir) 
-- 
+- [Python enumerate Fonksiyonu](#python-enumerate-fonksiyonu)
  
 
 
@@ -200,6 +200,19 @@ while count < 5:
     count += 1
 ```
 Yukarıdaki örnekte `count` adlı bir değişken tanımlanır ve `while` döngüsü bu değişkenin değeri 5'ten küçük olduğu sürece çalışır. Her döngü adımında `count` değeri bir artırılarak ekrana yazdırılır. `count` değeri 5 olduğunda koşul sağlanmaz ve döngü sona erer.
+
+## Python enumerate Fonksiyonu
+
+`enumerate`, bir dizi veya başka bir yinelenebilir nesne üzerinde döngü oluştururken hem elemanların değerlerine hem de indislerine erişmemizi sağlayan bir Python işlevidir.
+
+Örneğin:
+
+```python
+liste = ['a', 'b', 'c', 'd']
+
+for index, value in enumerate(liste):
+    print(f"Index: {index}, Value: {value}")```
+
 
 
 
