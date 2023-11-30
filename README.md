@@ -8,6 +8,9 @@
 - [Python Conditions Nedir?](#python-conditions-nedir)
 - [Python Loops Nedir?](#python-loops-nedir) 
 - [Python Comprehension Nedir?](#python-comprehension-nedir)
+- [Numpy Nedir?](#numpy-nedir)
+- [Pandas Nedir?](#pandas-nedir)
+ 
  
 
 
@@ -340,4 +343,114 @@ Bir generator (üreteç) oluşturmak için kullanılan yapıdır. Liste veya sö
 generator = (x ** 2 for x in range(5))
 # Bu, bir generator nesnesi oluşturur ve elemanları gerektiğinde üretir
 ```
+## NumPy Nedir?
+
+NumPy, Python programlama dilinin bilimsel hesaplamalar, veri manipülasyonu ve analizi için kullanılan temel bir kütüphanesidir. "Numerical Python" ifadesinden türetilmiştir.
+
+#### Temel Özellikler:
+
+1. **Nesne Dizileri (ndarray)**: NumPy'nin temel veri yapısı olan ndarray (N-dimensional Array), aynı türden verileri depolamak için optimize edilmiş çok boyutlu dizilerdir. Bu çok boyutlu diziler, 1D, 2D, 3D ve daha fazla boyutta veri depolamak için kullanılabilir.
+
+2. **Hızlı Matematiksel İşlemler**: Vektörel ve matris işlemleri gibi matematiksel işlemler hızlı bir şekilde gerçekleştirilir. NumPy, altında C dilinde yazılmış optimize edilmiş altyapıları kullanır, bu da işlemlerin Python listelerine göre daha hızlı olmasını sağlar.
+
+3. **Broadcasting**: NumPy, farklı şekillerdeki diziler üzerinde matematiksel işlemler yaparken otomatik olarak yayma (broadcasting) özelliği sunar. Bu, farklı boyutlardaki dizileri birbirleriyle işlem yapılabilir hale getirir.
+
+4. **Rastgele Sayı Üretimi**: NumPy, rastgele sayılar üretmek için fonksiyonlar içerir. Bu, simülasyonlar, istatistiksel analizler ve diğer birçok algoritma için önemlidir.
+
+NumPy, bilimsel hesaplamalar, veri analizi, makine öğrenimi gibi birçok alanda yaygın olarak kullanılan bir kütüphanedir. Ayrıca, diğer Python kütüphaneleriyle (örneğin, Pandas, Matplotlib, SciPy) uyumlu olarak çalışarak veri analizi ve bilimsel hesaplamalar için temel bir bileşen olarak kullanılır.
+
+### Reshaping (Yeniden Şekillendirme)
+NumPy'de `reshape()` fonksiyonu, mevcut bir ndarray'in şeklini değiştirmek için kullanılır. Bu işlem, veriyi aynı veri miktarında fakat farklı bir şekilde düzenlemek için kullanılır. Yani, verinin boyutları değiştirilebilir ancak içerdiği toplam veri miktarı değişmez.
+
+```python
+import numpy as np
+
+# 1'den 9'a kadar olan sayıları içeren bir ndarray oluşturma
+array = np.arange(1, 10)
+
+# Yeniden şekillendirme işlemi ile 3x3'lük bir matris oluşturma
+reshaped_array = array.reshape(3, 3)
+```
+
+### Index İşlemleri
+NumPy'de dizilerdeki belirli elemanlara erişmek için indeksler kullanılır. Bu indeksler, tek bir elemana erişmek veya bir dilim (slice) almak için kullanılabilir.
+
+```python
+import numpy as np
+
+array = np.array([1, 2, 3, 4, 5])
+
+# İndeks kullanarak belirli bir elemana erişme
+print(array[2])  # Bu kod, 3 çıktısını verecektir
+
+# Dilimleme (slicing) kullanarak belirli bir aralığı alma
+print(array[1:4])  # Bu kod, [2, 3, 4] çıktısını verecektir
+```
+
+
+### Fancy Index
+Fancy Indexing, NumPy'de daha karmaşık indeksleme yöntemlerini ifade eder. Bu yöntem, normal bir indeks dizisi kullanarak veya bir koşul ifadesiyle belirli elemanlara erişmek için kullanılır.
+
+```python
+import numpy as np
+
+array = np.array([1, 2, 3, 4, 5])
+
+# Fancy Indexing kullanarak belirli elemanlara erişme
+indices = [0, 2, 4]
+print(array[indices])  # Bu kod, [1, 3, 5] çıktısını verecektir
+
+# Koşul ifadesiyle belirli elemanlara erişme
+print(array[array > 2])  # Bu kod, [3, 4, 5] çıktısını verecektir
+```
+
+## Pandas Nedir?
+
+Pandas, Python programlama dilinde veri manipülasyonu ve veri analizi için kullanılan güçlü bir kütüphanedir. Yüksek performanslı, kolay kullanımlı veri yapıları ve veri analizi araçları sunar.
+
+#### Temel Özellikler:
+
+1. **DataFrame ve Series**: Pandas'ın temel veri yapıları, DataFrame ve Series'dir. DataFrame, satır ve sütunlardan oluşan tablo benzeri bir veri yapısıdır. Series ise tek boyutlu etiketlenmiş bir dizidir.
+
+2. **Veri Okuma ve Yazma**: Pandas, çeşitli dosya formatlarındaki verileri okuma (csv, excel, json, sql, vb.) ve yazma işlemleri için işlevler sunar.
+
+3. **Veri Manipülasyonu**: Veri içinde filtreleme, birleştirme, gruplama, eksik verilerle çalışma, veri dönüştürme gibi işlemler kolaylıkla yapılabilir.
+
+4. **Zaman Serileri Analizi**: Pandas, zaman serileri verileri üzerinde analiz yapmak için özel araçlar içerir.
+
+5. **Hızlı ve Verimli**: Veri yapıları, altında Numpy'ın hızlı matematiksel işlemlerini kullandığı için büyük veri kümeleri üzerinde etkili çalışma sağlar.
+
+Pandas, veri temizleme, veri hazırlama, veri görselleştirme ve veri analizi gibi birçok alanda yaygın olarak kullanılmaktadır. Özellikle, veri bilimi ve makine öğrenimi gibi alanlarda veri işleme süreçlerinin önemli bir parçasıdır.
+
+### Pandas Series
+Pandas Series, tek boyutlu etiketli bir dizidir. Her bir eleman, belirli bir indeksle tanımlanır. Series'ler, farklı veri tiplerinde verileri içinde barındırabilirler.
+
+### Pandas Seçim İşlemleri, loc, iloc
+Pandas'da veri seçimi yapmak için `loc` ve `iloc` indeksleme yöntemleri kullanılır. `loc` indeksleme, etiket bazlı indeksleme yaparken `iloc`, konum bazlı (sıra numarası) indeksleme yapar.
+
+### Toplulaştırma (Aggregation) ve Gruplama (Grouping)
+Pandas, veri toplulaştırma ve gruplama işlemlerini yapmak için kullanılır. Veri toplulaştırma, bir veri kümesini özetleyerek istatistiksel bilgiler elde etmeyi sağlar. Gruplama ise belirli bir kritere göre veriyi gruplayarak işlem yapmayı kolaylaştırır.
+
+### Pivot Table
+Pivot table, verileri bir DataFrame'de çapraz tablo şeklinde düzenlemek ve özetlemek için kullanılan bir işlevdir. Bu, verileri bir veya daha fazla anahtarla gruplayarak çok boyutlu bir şekilde analiz etmeyi sağlar.
+
+### Apply & Lambda
+Pandas'ta apply() fonksiyonu, DataFrame veya Series üzerinde belirli bir işlevi veya lambda fonksiyonunu her bir elemana uygulamak için kullanılır. lambda ise Python'da anonim (isimsiz) fonksiyonlar oluşturmayı sağlar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
